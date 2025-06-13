@@ -202,6 +202,7 @@ void chat_ui_loop() {
         input[len] = '\0';
 
         // TODO: 서버로 메시지 전송
+        // TODO: FOCUS 어디냐에 따라 Enter 다른 동작 수행
         mvwprintw(chat_win, chat_line++, 1, "%s: %s", username, input);
 
         if (chat_line >= max_chat_lines) {
